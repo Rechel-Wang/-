@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cullinan 品牌活动时间线 | Rolls-Royce Newsroom</title>
+<style>
+  :root{
+    --bg:#f7f5f2;
+    --paper:#ffffff;
+    --ink:#24202a;
+    --ink-soft:#6b6470;
+    --line:#e5e0da;
+    --accent:#4b3b5c;
+    --accent-soft:#f0ebf4;
+    --gold:#9a7b4f;
+    --shadow:0 1px 2px rgba(36,32,42,.05),0 8px 24px rgba(36,32,42,.05);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei","Segoe UI",Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px 80px}
+  header{padding:56px 0 32px;border-bottom:1px solid var(--line);margin-bottom:28px}
+  .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  h1{font-size:38px;line-height:1.25;margin:12px 0 10px;letter-spacing:-.02em}
+  .sub{color:var(--ink-soft);font-size:15px;max-width:760px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .stat{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 16px;min-width:120px}
+  .stat b{display:block;font-size:22px;line-height:1.2;color:var(--accent)}
+  .stat span{font-size:12px;color:var(--ink-soft)}
+  .controls{position:sticky;top:0;z-index:10;background:rgba(247,245,242,.94);backdrop-filter:blur(10px);padding:14px 0;border-bottom:1px solid var(--line);margin-bottom:36px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .chip{border:1px solid var(--line);background:var(--paper);color:var(--ink-soft);border-radius:999px;padding:6px 13px;font-size:13px;cursor:pointer;transition:.16s;white-space:nowrap}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+  .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .row2{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  select,input[type=text]{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:7px 11px;font-size:13px;color:var(--ink);outline:none}
+  select:focus,input[type=text]:focus{border-color:var(--accent)}
+  .btn{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer;color:var(--ink-soft)}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+  .btn.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .count{margin-left:auto;font-size:13px;color:var(--ink-soft)}
+  .tl{position:relative;padding-left:34px}
+  .tl:before{content:"";position:absolute;left:9px;top:6px;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent) 0%,var(--line) 12%,var(--line) 88%,transparent 100%)}
+  .year{margin:34px 0 14px;position:relative}
+  .year:first-child{margin-top:0}
+  .year:before{content:"";position:absolute;left:-31px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
+  .year h2{font-size:26px;margin:0;color:var(--accent);letter-spacing:.02em}
+  .year small{font-weight:400;color:var(--ink-soft);font-size:13px;margin-left:10px}
+  .item{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:12px;box-shadow:var(--shadow);transition:.16s}
+  .item:hover{transform:translateY(-1px);border-color:#d4cbdc}
+  .item:before{content:"";position:absolute;left:-29px;top:26px;width:8px;height:8px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+  .itemTop{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+  .date{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.04em;min-width:78px}
+  .tag{font-size:11px;padding:2px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .tag.t-launch{background:#f6ece9;color:#9b5544}
+  .tag.t-show{background:#eaf1f6;color:#41688a}
+  .tag.t-bespoke{background:#f3eaf4;color:#82528c}
+  .tag.t-lifestyle{background:#f1f1e7;color:#77743f}
+  .tag.t-culture{background:#f7eee2;color:#95703a}
+  .tag.t-csr{background:#e9f3ec;color:#49785a}
+  .tag.t-network{background:#eceaf3;color:#5e5a86}
+  .tag.t-milestone{background:#f5e9e9;color:#945858}
+  .item h3{font-size:17px;margin:0 0 4px;line-height:1.45}
+  .en{font-size:12px;color:#9b949f;margin:0 0 8px;line-height:1.5}
+  .desc{font-size:14px;color:#514b56;margin:0}
+  .src{display:inline-block;margin-top:10px;font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid #cfc3da}
+  .src:hover{border-color:var(--accent)}
+  .empty{padding:50px;text-align:center;color:var(--ink-soft)}
+  .note{margin-top:50px;background:#efeae4;border-radius:12px;padding:20px 22px;font-size:13px;color:#5e5763}
+  .note b{color:var(--ink)}
+  .note ul{margin:8px 0 0;padding-left:20px}
+  @media(max-width:640px){h1{font-size:28px}.wrap{padding:0 16px 60px}.tl{padding-left:26px}.item{padding:15px}.count{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Rolls-Royce Motor Cars · Newsroom</div>
+  <h1>Cullinan 品牌活动时间线</h1>
+  <p class="sub">基于劳斯莱斯汽车官方新闻中心以 “Cullinan” 为关键词的 95 条检索结果整理。聚焦以 Cullinan 为主角或重要角色的品牌活动：产品发布、车展与展会、定制与艺术合作、生活方式体验、文化时尚联动、公益社区及渠道网络。</p>
+  <div class="meta">
+    <div class="stat"><b id="s-act">0</b><span>核心品牌活动</span></div>
+    <div class="stat"><b>95</b><span>检索结果总数</span></div>
+    <div class="stat"><b>2019–2026</b><span>时间跨度</span></div>
+    <div class="stat"><b>8</b><span>活动类型</span></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="chips" id="chips"></div>
+  <div class="row2">
+    <select id="year"><option value="">全部年份</option></select>
+    <input type="text" id="q" placeholder="搜索关键词…" style="width:180px">
+    <button class="btn" id="sort">时间：由近到远</button>
+    <button class="btn" id="all">含背景提及（共95条）</button>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<div class="tl" id="tl"></div>
+
+<div class="note">
+  <b>整理口径与说明</b>
+  <ul>
+    <li>来源：<a href="https://newsroom.rolls-roycemotorcars.com/?q=Cullinan" target="_blank" rel="noopener">Rolls-Royce Motor Cars Newsroom 搜索 “Cullinan”</a>，检索日期 2026-11-19。检索结果共 95 条，覆盖 2019-08-16 至 2026-07-13。</li>
+    <li>“核心品牌活动”为人工筛选：以 Cullinan 为主体、或 Cullinan 承担明确展示/体验角色的事件。纯人事任命、财报数据、泛品牌传承内容放入“背景提及”，可一键展开。</li>
+    <li>时间以官网稿件的发布日期为准；若稿件报道的是早前举办的活动（如 2024 年 6 月伊比萨媒体试驾、2021 年阿联酋黄金禧年定制），在摘要中注明实际发生时间。</li>
+    <li>该新闻中心索引未收录 2018 年 Cullinan 全球首发及 2019 年 Black Badge Cullinan 发布的原始稿件，相关内容仅在后续稿件中被回溯提及，因此时间线起点为 2019 年 8 月。</li>
+  </ul>
+</div>
+</div>
+
+<script>
+const CATEGORIES = [
+  {k:"all",n:"全部活动"},
+  {k:"launch",n:"产品发布"},
+  {k:"show",n:"展会与试驾"},
+  {k:"bespoke",n:"定制与艺术"},
+  {k:"lifestyle",n:"生活方式"},
+  {k:"culture",n:"文化与时尚"},
+  {k:"csr",n:"公益与社区"},
+  {k:"network",n:"渠道与客户体验"},
+  {k:"milestone",n:"品牌里程碑"}
+];
+const TAGNAME = {launch:"产品发布",show:"展会与试驾",bespoke:"定制与艺术",lifestyle:"生活方式",culture:"文化与时尚",csr:"公益与社区",network:"渠道与客户体验",milestone:"品牌里程碑",bg:"背景提及"};
+
+// core:1 = Cullinan 品牌活动；core:0 = 检索结果中的背景/提及类内容
+const DATA = [
+{d:"2026-07-13",t:"圣特罗佩延长的夏日客户体验季",e:"Rolls-Royce Returns to Saint-Tropez for an Extended Summer Season at Celebrated Addresses",c:"lifestyle",core:1,s:"法国里维埃拉四处地标场地共呈现16辆Bespoke车型，Château de la Messardière部署四辆Cullinan车队；活动持续至7月31日，含自驾、私人晚宴与滚球之夜。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-returns-to-saint-tropez-for-an-extended-summer-season-at-celebrated-addresses/"},
+{d:"2026-07-08",t:"古德伍德速度节2026 Bespoke展陈",e:"Rolls-Royce Celebrates Bespoke at Goodwood Festival of Speed 2026",c:"show",core:1,s:"在劳斯莱斯之家旁呈现多款Bespoke委托，含Cullinan定制车；Spectre Series II完成英国公众首秀。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-celebrates-bespoke-at-goodwood-festival-of-speed-2026/"},
+{d:"2026-05-14",t:"Black Badge Cullinan by Cyril Kongo 艺术共创",e:"Rolls-Royce Presents Black Badge Cullinan by Cyril Kongo",c:"bespoke",core:1,s:"与艺术家Cyril Kongo共创5台专属委托，手绘星光顶篷、木饰面与野餐桌，首次采用渐变腰线；由纽约、首尔及古德伍德Private Offices联合策划，艺术家驻场Bespoke工坊深度共创。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-presents--black-badge-cullinan-by-cyril-kongo-capturing-the-energy-of-contemporary-art/"},
+{d:"2026-03-26",t:"Cullinan Yachting 航海主题定制企划",e:"Presenting Rolls-Royce Cullinan Yachting: A Bespoke Celebration of Marine Craft and Design",c:"bespoke",core:1,s:"以东南西北四个方位为线索推出4台专属Cullinan：手绘快艇尾流仪表台、描绘地中海季风的星光顶、由40余块木片拼成的罗盘纹饰，致敬品牌与游艇运动的渊源。",u:"https://newsroom.rolls-roycemotorcars.com/presenting-rolls-royce-cullinan-yachting-a-bespoke-celebration-of-marine-craft-and-design/"},
+{d:"2026-03-02",t:"Black Badge 品牌十周年",e:"Rolls-Royce Celebrates Tenth Anniversary of Black Badge",c:"milestone",core:1,s:"回顾Black Badge十年历程，现役阵容包含Black Badge Cullinan；该子品牌2016年始于Wraith与Ghost，并延伸至游戏、球鞋与街头艺术等定制合作。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-celebrates-tenth-anniversary-of-black-badge-the-transformative-alter-ego/"},
+{d:"2026-03-26",t:"劳斯莱斯与航海：共享的传承",e:"Rolls-Royce and Yachting: A Shared Heritage",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-and-yachting-a-shared-heritage/"},
+{d:"2026-03-05",t:"欢庆女神：自1911年至今的恒在",e:"The Spirit of Ecstasy: A Constant Presence Since 1911",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/the-spirit-of-ecstasy-a-constant-presence-since-1911/"},
+{d:"2026-01-15",t:"任命英国、欧洲及中亚区域总监",e:"Rolls-Royce Motor Cars Appoints New Regional Director for UK, Europe and Central Asia",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-appoints-new-regional-director-for-united-kingdom-europe-and-central-asia/"},
+{d:"2026-01-09",t:"2025年Bespoke趋势、创新与成就回顾",e:"Spectacular, Singular and Distinctly Successful: Rolls-Royce Presents Bespoke Trends, Innovations and Achievements in 2025",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/spectacular-singular-and-distinctly-successful-rolls-royce-presents-bespoke-trends-innovations-and-achievements-in-2025/"},
+{d:"2025-11-27",t:"劳斯莱斯传承：1904至今与未来",e:"Rolls-Royce Heritage: From 1904 to Today – and Beyond",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-heritage-from-1904-to-today---and-beyond/"},
+{d:"2025-10-17",t:"古德伍德之家的野生动物栖息地",e:"Celebrating Nature: Wildlife at the Home of Rolls-Royce",c:"csr",core:1,s:"获救鸭子乘Cullinan抵达劳斯莱斯之家园区湖泊定居，成为工厂生态与社区关怀的延续性故事。",u:"https://newsroom.rolls-roycemotorcars.com/celebrating-nature-wildlife-at-the-home-of-rolls-royce/"},
+{d:"2025-09-17",t:"Cullinan Cosmos 太空主题独一无二委托",e:"Rolls-Royce Presents Cullinan Cosmos: A One-of-One Commission That Celebrates the Drama of Space",c:"bespoke",core:1,s:"为一个热爱宇宙的四岁男孩家庭打造；品牌史上首次实现全手绘星光顶篷，由内部艺术家耗时160小时完成。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-presents-cullinan-cosmos-a-one-of-one-commission-that-celebrates-the-drama-of-space/"},
+{d:"2025-07-24",t:"中国壁画艺术致敬：敦煌灵感三车组合",e:"Chinese Mural Art: A Cultural Tribute by Rolls-Royce",c:"culture",core:1,s:"以千年敦煌壁画为灵感，三车组合包括Phantom Extended、Black Badge Cullinan与Black Badge Spectre，含手绘Gallery艺术画作。",u:"https://newsroom.rolls-roycemotorcars.com/chinese-mural-art-a-cultural-tribute-by-rolls-royce_20260727080316667/"},
+{d:"2025-06-27",t:"巴黎时装周街头风格",e:"Street Style: Rolls-Royce Captivates at Paris Fashion Week",c:"culture",core:1,s:"Spectre与Cullinan作为嘉宾接送用车亮相巴黎时装周及afterparty，强化品牌在色彩、工艺与协作层面与时尚界的联结。",u:"https://newsroom.rolls-roycemotorcars.com/street-style-rolls-royce-captivates-at-paris-fashion-week_20260727074913025/"},
+{d:"2025-05-22",t:"切尔西花展花卉艺术展示",e:"Rolls-Royce Celebrates Floral Art in Chelsea with Spectre",c:"culture",core:1,s:"以Spectre为主角的花艺委托展示，并回溯Phantom Cherry Blossom与Daisy Cullinan等自然主题定制作品。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-celebrates-floral-art-in-chelsea-with-spectre_20260727074923768/"},
+{d:"2025-05-07",t:"向年度慈善伙伴Aldingbourne Trust交接支票",e:"Rolls-Royce Presents Cheque to 2024 House Charity, Aldingbourne Trust",c:"csr",core:1,s:"劳斯莱斯团队与Trust客户共同体验Cullinan乘坐；该机构为约1500名学习障碍与自闭症人士提供支持。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-presents-cheque-to-2024-house-charity-aldingbourne-trust/"},
+{d:"2025-04-24",t:"Black Badge Cullinan Daisy 雏菊委托",e:"Rolls-Royce Presents Black Badge Cullinan Daisy",c:"bespoke",core:1,s:"基于客户最爱徒步路线的独一无二Series II委托；采用木饰面喷砂工艺形成立体雏菊图案，并延伸至车身腰线与刺绣细节。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-presents-black-badge-cullinan-daisy-inspired-by-one-clients-remarkable-path/"},
+{d:"2025-03-27",t:"古德伍德之家工艺之美",e:"The Pursuit of Perfection: Craftsmanship at the Home of Rolls-Royce",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/the-pursuit-of-perfection--craftsmanship-at-the-home-of-rolls-royce/"},
+{d:"2025-03-24",t:"世纪车型：Phantom VII",e:"Models of the Marque – The 2000s: The Rolls-Royce Phantom VII",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/models-of-the-marque---the-2000s-the-rolls-royce-phantom-vii/"},
+{d:"2025-01-08",t:"创纪录投资引领Bespoke里程碑之年",e:"Landmark Investment Crowns Record Year for Bespoke at Rolls-Royce Motor Cars",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/landmark-investment-crowns-record-year-for-bespoke-at-rolls-royce-motor-cars/"},
+{d:"2024-12-19",t:"2024 Bespoke年度亮点回顾",e:"A Year of Marvels and Masterpieces: Rolls-Royce Reflects on 2024 Bespoke Highlights",c:"bespoke",core:1,s:"年度定制精选回顾，包含以Phantom Rose为灵感、采用8,372颗激光蚀刻光点的Cullinan Series II 'Rose' 委托。",u:"https://newsroom.rolls-roycemotorcars.com/a-year-of-marvels-and-masterpieces-rolls-royce-reflects-on-2024-bespoke-highlights/"},
+{d:"2024-12-13",t:"Cullinan Series II 伊比萨全球媒体试驾",e:"Cullinan Series II and Black Badge Cullinan Series II in Ibiza",c:"show",core:1,s:"官方发布2024年6月在伊比萨举办的全球媒体试驾影像与B-roll，主角为Cullinan Series II与Black Badge Cullinan Series II。",u:"https://newsroom.rolls-roycemotorcars.com/cullinan-series-ii-and-black-badge-cullinan-series-ii-in-ibiza_20260727075003858/"},
+{d:"2024-09-13",t:"任命新任设计总监",e:"Rolls-Royce Announces New Director of Design",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-announces-new-director-of-design/"},
+{d:"2024-08-09",t:"曼谷新展厅开幕",e:"Rolls-Royce Motor Cars Bangkok Opens New Showroom in Thailand’s Largest Luxury Hub",c:"network",core:1,s:"位于泰国最大豪华车枢纽的新展厅开业，Cullinan等全系车型亮相。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-bangkok-opens-new-showroom-in-thailands-largest-luxury-hub/"},
+{d:"2024-07-09",t:"古德伍德速度节：新一代Cullinan英国公众首秀",e:"Rolls-Royce Motor Cars Celebrates Bespoke at Festival of Speed",c:"show",core:1,s:"在Laundry Green展出Bespoke车型合集，最新一代Cullinan完成英国公众首秀，与纯电Spectre同场。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-celebrates-bespoke-at-festival-of-speed/"},
+{d:"2024-06-21",t:"全球车主拉力与Burghley House优雅竞赛",e:"Rolls-Royce Joins Enthusiasts from Around the World for Their Annual Rally",c:"show",core:1,s:"6月21—23日在林肯郡Burghley House举行，Phantom、Ghost、Cullinan与Spectre全系车型亮相全球最大劳斯莱斯爱好者聚会。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-joins-enthusiasts-from-around-the-world-for-their-annual-rally/"},
+{d:"2024-05-28",t:"Villa d’Este优雅竞赛：Cullinan Series II全球公众首秀",e:"Rolls-Royce Honours 120 Years of Excellence at Concorso d’Eleganza Villa d’Este",c:"show",core:1,s:"在意大利科莫湖畔完成Cullinan Series II全球公众首秀，并以五台经典与当代车型巡游庆祝品牌120周年。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-honours-120-years-of-excellence-at-concorso-deleganza-villa-deste/"},
+{d:"2024-05-17",t:"世界蜜蜂日生态项目",e:"Rolls-Royce Prepares to Celebrate World Bee Day",c:"csr",core:1,s:"古德伍德六座蜂箱自2017年起以车型命名，包括Cullinan；品牌借此传达工厂生态与可持续性承诺。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-prepares-to-celebrate-world-bee-day/"},
+{d:"2024-05-07",t:"Cullinan Series II 全球发布",e:"Rolls-Royce Presents Cullinan Series II: A Bold Evolution of the World’s Pre-eminent Super-Luxury SUV",c:"launch",core:1,s:"品牌史上最深入的Series II升级：首次在V12车型上搭载SPIRIT系统与Whispers私享应用、发光格栅、23英寸轮毂、Clock Cabinet欢庆女神展示柜，以及Duality Twill竹纤维面料与10.7万孔精准打孔工艺。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-presents-cullinan-series-ii-a-bold-evolution-of-the-worlds-pre-eminent-super-luxury-suv/"},
+{d:"2024-05-07",t:"Black Badge Cullinan Series II 发布",e:"Rolls-Royce Black Badge Cullinan Series II: The Alter Ego, Evolved",c:"launch",core:1,s:"Black Badge的进化版本，配备专属外观漆面、轮毂与内饰细节，以更张扬的材质与色彩回应特定客户群。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-black-badge-cullinan-series-ii-the-alter-ego-evolved/"},
+{d:"2024-03-14",t:"Goodwood Gravity Racers 品牌溯源",e:"Rolls-Royce Gravity Racers: The First Vehicles of the Goodwood Era",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-gravity-racers-the-first-vehicles-of-the-goodwood-era/"},
+{d:"2024-02-23",t:"任命销售与品牌总监",e:"Rolls-Royce Announces New Director of Sales & Brand",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-announces-new-director-of-sales--brand/"},
+{d:"2024-02-02",t:"龙年Bespoke定制系列",e:"Rolls-Royce ‘Year of the Dragon’ Bespoke Commissions",c:"culture",core:1,s:"为2月10日农历新年推出四台定制车（三台Phantom Extended + 一台Cullinan），面向全球华人客户，呈现中国文化的国际表达。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-year-of-the-dragon-bespoke-commissions-an-international-celebration-of-chinese-culture/"},
+{d:"2024-01-08",t:"2023年度业绩与Bespoke里程碑",e:"Rolls-Royce Motor Cars in 2023: A Year of Success",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-in-2023-a-year-of-success/"},
+{d:"2023-12-20",t:"2023年度Bespoke委托回顾",e:"Crafting Dreams into Reality: Rolls-Royce Reflects on a Year of Magnificent Bespoke Commissions",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/crafting-dreams-into-reality-rolls-royce-reflects-on-a-year-of-magnificent-bespoke-commissions/"},
+{d:"2023-12-14",t:"两项工程与制造高管任命",e:"Rolls-Royce Builds on Foundation of Engineering and Manufacturing Excellence",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-builds-on-foundation-of-engineering-and-manufacturing-excellence-two-new-senior-leaders-to-join-the-company/"},
+{d:"2023-12-14",t:"Ghost：纯粹表达的象征",e:"Rolls-Royce Ghost: A Symbol of Endless Pure Expression",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-ghost-a-symbol-of-endless-pure-expression/"},
+{d:"2023-11-14",t:"从Claude Johnson到Torsten Müller-Ötvös",e:"A Grand Succession: From Claude Johnson to Torsten Müller-Ötvös",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/a-grand-succession-from-claude-johnson-to-torsten-muller-otvos/"},
+{d:"2023-10-24",t:"The Pearl Cullinan 珍珠主题委托",e:"‘The Pearl Cullinan’: A Birthday Gift Like No Other",c:"bespoke",core:1,s:"迪拜Private Office呈现的独一无二委托：儿子为父亲生日定制，仪表台饰以不锈钢镶嵌的阿拉伯语“父亲”符号，珍珠母贝工艺极致复杂。",u:"https://newsroom.rolls-roycemotorcars.com/the-pearl-cullinan-a-birthday-gift-like-no-other/"},
+{d:"2023-10-05",t:"CEO Torsten Müller-Ötvös 退休公告",e:"Rolls-Royce Motor Cars Announces Retirement of Torsten Müller-Ötvös, CEO",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-announces-retirement-of-torsten-muller-otvos-ceo/"},
+{d:"2023-07-10",t:"古德伍德速度节当代定制委托",e:"Rolls-Royce Motor Cars Presents Contemporary Commissions at Festival of Speed",c:"show",core:1,s:"Phantom、Ghost、Cullinan与Spectre四台定制车陈列于Laundry Green，展现品牌手工工艺的多元表达。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-presents-contemporary-commissions-at-festival-of-speed/"},
+{d:"2023-07-04",t:"Spectre：改变一切的劳斯莱斯",e:"Rolls-Royce Spectre: The Rolls-Royce That Changes Everything",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-spectre-the-rolls-royce-that-changes-everything/"},
+{d:"2023-05-30",t:"Black Badge Cullinan ‘Blue Shadow’ 限量系列",e:"Black Badge Cullinan ‘Blue Shadow’: A Bespoke Journey to the Edge of Space",c:"bespoke",core:1,s:"以卡门线（地表上方62英里的太空边界）为灵感，全球限量62台，通过Private Collection专属渠道发售。",u:"https://newsroom.rolls-roycemotorcars.com/black-badge-cullinan-blue-shadow-a-bespoke-journey-to-the-edge-of-space/"},
+{d:"2023-05-19",t:"迪拜蜂场世界蜜蜂日",e:"Rolls-Royce Motor Cars Celebrates World Bee Day by Inspiring Young Minds at Its Apiary in Dubai",c:"csr",core:1,s:"迪拜蜂场六座蜂箱中五座以车型命名，含Cullinan；面向当地年轻一代开展生态教育。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-celebrates-world-bee-day-by-inspiring-young-minds-at-its-apiary-in-dubai/"},
+{d:"2023-04-18",t:"上海车展：Spectre中国首秀与定制作品",e:"Rolls-Royce Celebrates China Premiere of Spectre as well as Stunning Bespoke Creations at Auto Shanghai 2023",c:"show",core:1,s:"Spectre完成中国首秀，同场呈现缎面Ice Blue等Bespoke Black Badge Cullinan等作品。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-celebrates-china-premiere-of-spectre--as-well-as-stunning-bespoke-creations--at-auto-shanghai-2023/"},
+{d:"2023-03-08",t:"利雅得新展厅开幕",e:"Rolls-Royce Motor Cars Opens a New Showroom in Riyadh",c:"network",core:1,s:"展厅开幕现场展示多款车型，包括Sagano Green Cullinan与Black Badge Cullinan等定制版本。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-opens-a-new-showroom-in-riyadh/"},
+{d:"2023-02-15",t:"2022年度Bespoke回顾",e:"Rare, Precious and Emotionally Resonant Luxury: An Extraordinary Year for Rolls-Royce Bespoke",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rare-precious-and-emotionally-resonant-luxury-an-extraordinary-year-for-rolls-royce-bespoke/"},
+{d:"2023-01-26",t:"古德伍德之家20周年（2003–2023）",e:"20 Years at Goodwood – The Home of Rolls-Royce, 2003-2023",c:"milestone",core:1,s:"回顾现代劳斯莱斯复兴二十年：Cullinan自2018年推出后成为品牌最抢手车型之一，将“魔毯之旅”带到越野场景。",u:"https://newsroom.rolls-roycemotorcars.com/20-years-at-goodwood---the-home-of-rolls-royce-2003-2023/"},
+{d:"2023-01-26",t:"20款车看20年品牌演进",e:"20 Cars for 20 Years: The Evolution of Rolls-Royce, 2003-2023",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/20-cars-for-20-years-the-evolution-of-rolls-royce-2003-2023_20260727073406845/"},
+{d:"2023-01-09",t:"2022年创纪录销量",e:"Historic Sales Record Completes Landmark Year for Rolls-Royce Motor Cars",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/historic-sales-record-completes-landmark-year-for-rolls-royce-motor-cars/"},
+{d:"2022-12-01",t:"Cullinan Inspired by Fashion 高定成衣系列",e:"Cullinan Inspired by Fashion: Prêt-à-Porter Collection by the House of Rolls-Royce",c:"culture",core:1,s:"两套成衣灵感定制系列：Re-Belle汲取色块拼接，Fu-Shion融合功能与时尚，以Cullinan展示Bespoke的无限可能。",u:"https://newsroom.rolls-roycemotorcars.com/cullinan-inspired-by-fashion-pret-a-porter-collection-by-the-house-of-rolls-royce/"},
+{d:"2022-10-18",t:"Spectre全球首发",e:"Rolls-Royce Spectre Unveiled: The Marque’s First Fully-Electric Motor Car",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-spectre-unveiled-the-marques-first-fully-electric-motor-car/"},
+{d:"2022-10-10",t:"Spectre之名背后的历史",e:"A Spirit of Bold Innovation: The Extraordinary History of the Spectre Name",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/a-spirit-of-bold-innovation-the-extraordinary-history-of-the-spectre-name/"},
+{d:"2022-10-03",t:"“Twenty”车型百年纪念",e:"Rolls-Royce Celebrates Centenary of the ‘Twenty’",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-celebrates-centenary-of-the-twenty/"},
+{d:"2022-08-25",t:"Salon Privé：Phantom Series II英国首秀",e:"Rolls-Royce Motor Cars: Phantom Series II Makes UK Debut at Salon Privé",c:"show",core:1,s:"现场呈现Black Badge家族定制车型，Black Badge项目覆盖包括Cullinan在内的多款车型。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-phantom-series-ii-makes-uk-debut-at-salon-prive/"},
+{d:"2022-08-19",t:"蒙特雷汽车周：Phantom Series II北美首秀",e:"Rolls-Royce Phantom Series II North American Debut at Monterey Car Week",c:"show",core:1,s:"首台Forbidden Pink涂装的Black Badge Cullinan亮相，与Pebble Beach 2022收藏系列共同呈现。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-phantom-series-ii-north-american-debut-at-monterey-car-week/"},
+{d:"2022-08-19",t:"Pebble Beach Collection 2022",e:"Rolls-Royce Reveals ‘Pebble Beach Collection’ 2022",c:"show",core:1,s:"在蒙特雷汽车周发布独家Bespoke收藏系列；Forbidden Pink Black Badge Cullinan全球首发，打破“Black Badge必为黑色”的惯例。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-reveals-pebble-beach-collection-2022/"},
+{d:"2022-06-16",t:"古德伍德速度节 Black Badge专场",e:"Rolls-Royce Motor Cars Celebrates Black Badge at the Festival of Speed",c:"show",core:1,s:"在Laundry Green展出Black Badge Wraith、Dawn、Cullinan与Ghost的定制委托，呈现车主审美。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-celebrates-black-badge-at-the-festival-of-speed/"},
+{d:"2022-05-27",t:"多哈新展厅与客户体验中心",e:"Rolls-Royce Motor Cars Doha Unveils New Showroom and Client Experience",c:"network",core:1,s:"新展厅与客户体验空间揭幕，Black Badge Cullinan等车型均在展示之列。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-doha-unveils-new-showroom-and-client-experience/"},
+{d:"2022-04-20",t:"伦敦经销商年度回顾与Cullinan艺术画拍卖",e:"A Year of Excellence at Rolls-Royce Motor Cars London",c:"network",core:1,s:"在活动上揭幕自学艺术家Laurence M. White创作的Cullinan主题画作，随后进行慈善拍卖。",u:"https://newsroom.rolls-roycemotorcars.com/a-year-of-excellence-at-rolls-royce-motor-cars-london/"},
+{d:"2022-03-30",t:"纯电Spectre完成北极圈冬季测试",e:"All-Electric Rolls-Royce Spectre Concludes Winter Testing 55km from Arctic Circle",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/all-electric-rolls-royce-spectre-concludes-winter-testing-55km-from-arctic-circle/"},
+{d:"2022-02-09",t:"Whispers拍卖助力品牌慈善伙伴",e:"Whispers Auction Boosts Funds for Rolls-Royce’s House Charity",c:"csr",core:1,s:"艺术家以Cullinan全地形能力为主题创作画作并拍卖，为品牌年度慈善伙伴筹款。",u:"https://newsroom.rolls-roycemotorcars.com/whispers-auction-boosts-funds-for-rolls-royces-house-charity/"},
+{d:"2022-02-06",t:"欢庆女神为最空气动力学车型重新设计",e:"Spirit of Ecstasy Redesigned for Most Aerodynamic Rolls-Royce Ever",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/spirit-of-ecstasy-redesigned-for-most-aerodynamic-rolls-royce-ever/"},
+{d:"2022-01-13",t:"2021年度Bespoke回顾：Cullinan 50",e:"Whimsical & Wonderful, A Momentous Year for Rolls-Royce Bespoke",c:"bespoke",core:1,s:"回顾为阿联酋建国50周年打造的一台独一无二Cullinan，作为2021年金禧年主题定制代表作。",u:"https://newsroom.rolls-roycemotorcars.com/whimsical--wonderful--a-momentous-year-for-rolls-royce-bespoke/"},
+{d:"2022-01-10",t:"2021年度业绩创纪录",e:"Rolls-Royce Motor Cars Reports Record Annual Results for 2021",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-reports-record-annual-results-for-2021/"},
+{d:"2021-10-28",t:"Black Badge Ghost发布",e:"Rolls-Royce Announces Black Badge Ghost the Purest Black Badge Yet",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-announces-black-badge-ghost-the-purest-black-badge-yet/"},
+{d:"2021-10-21",t:"Black Badge起源故事",e:"Rolls-Royce Black Badge: The Origin Story",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-black-badge-the-origin-story/"},
+{d:"2021-09-29",t:"宣布首款纯电车型计划",e:"A Prophecy Fulfilled, A Promise Kept: Rolls-Royce Announces First Fully Electric Car",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/a-prophecy-fulfilled-a-promise-kept-a-remarkable-undertaking-underway-rolls-royce-motor-cars-announces-first-fully-electric-car/"},
+{d:"2021-08-26",t:"Salon Privé 2021 Bespoke展陈",e:"Rolls-Royce Motor Cars Celebrates Bespoke at Salon Privé",c:"show",core:1,s:"Wraith与Black Badge Cullinan定制车亮相Concours d’Elégance，并参与Cotswolds巡游。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-celebrates-bespoke-at-salon-prive/"},
+{d:"2021-08-18",t:"古德伍德鸭子救援行动",e:"Rolls-Royce to the Rescue in Goodwood Duck Drama",c:"csr",core:1,s:"获救鸭子由Cullinan护送至劳斯莱斯制造工厂的生态冷却湖放生。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-to-the-rescue-in-goodwood-duck-drama/"},
+{d:"2021-08-12",t:"蒙特雷汽车周Bespoke创作回归",e:"Rolls-Royce Motor Cars Celebrates the Return of Monterey Car Week with Bespoke Creations",c:"show",core:1,s:"冰蓝色Cullinan Black Badge与Ghost定制车亮相；品牌Bespoke Atelier在The Quail展出。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-celebrates-the-return-of-monterey-car-week-with-bespoke-creations/"},
+{d:"2021-07-29",t:"乡村运动与休闲生活方式企划",e:"Rolls-Royce Motor Cars Celebrates Sporting and Country Pursuits",c:"lifestyle",core:1,s:"以Cullinan为主角阐述乡村生活场景，强调豪华、实用与多功能的结合及车型专属Bespoke配置。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-celebrates-sporting-and-country-pursuits/"},
+{d:"2021-07-20",t:"Escapism行李系列新增Black Badge版本",e:"Rolls-Royce Adds Black Badge Variants to Escapism Luggage Range",c:"lifestyle",core:1,s:"新材质灵感源自Cullinan Black Badge独有的技术编织纹理，并提供Black Badge色板中的大胆配色。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-adds-black-badge-variants-to-escapism-luggage-range/"},
+{d:"2021-07-07",t:"古德伍德速度节Bespoke展陈",e:"Rolls-Royce Motor Cars Celebrates Bespoke at the Goodwood Festival of Speed",c:"show",core:1,s:"Phantom、Ghost、Dawn、Wraith与Cullinan定制车在Laundry Green同场展出。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-celebrates-bespoke-at-the-goodwood-festival-of-speed/"},
+{d:"2021-05-20",t:"任命首位少年养蜂人",e:"Rolls-Royce Appoints Poppy Liddle as First-Ever Junior Beekeeper",c:"csr",core:1,s:"品牌生态项目延续，迪拜蜂场含以Cullinan命名的蜂箱，助力年轻一代了解自然。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-appoints-poppy-liddle--as-first-ever-junior-beekeeper/"},
+{d:"2021-05-19",t:"迪拜The Apiary世界蜜蜂日企划",e:"Rolls-Royce Motor Cars Middle East & Africa and AGMC Honour World Bee Day with ‘The Apiary’ Initiative",c:"csr",core:1,s:"六座蜂箱中五座以品牌车型命名，包括Cullinan，第六座致敬欢庆女神。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-middle-east--africa-and-agmc-honour-world-bee-day-with-the-apiary-initiative/"},
+{d:"2021-04-19",t:"上海车展当代Bespoke工艺三车展陈",e:"Collective of Three Motor Cars Celebrate the Breadth of Contemporary Bespoke Craftsmanship at Auto China, Shanghai",c:"show",core:1,s:"由一台独一无二Black Badge Cullinan领衔的三车组合，呈现品牌当代定制工艺的广度。",u:"https://newsroom.rolls-roycemotorcars.com/collective-of-three-motor-cars-celebrate-the-breadth-of-contemporary-bespoke-craftsmanship-at-auto-china-shanghai/"},
+{d:"2021-04-12",t:"Cullinan Recreation Module 休闲模块资料包",e:"Rolls-Royce Motor Cars Cullinan Recreation Module",c:"lifestyle",core:1,s:"详解车内户外休闲模块与King of the Night等定制方案，强化#EffortlessEverywhere的生活方式主张。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-cullinan-recreation-module/"},
+{d:"2021-04-08",t:"2021年第一季度创纪录业绩",e:"Rolls-Royce Motor Cars Reports Record First Quarter Results",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-reports-record-first-quarter-results/"},
+{d:"2021-03-18",t:"赛车手Ben & Christine Sloss定制Black Badge Cullinan交付",e:"Racing and Car Enthusiasts Ben & Christine Sloss Add Bespoke Black Badge Cullinan to Stable",c:"bespoke",core:1,s:"专属车身配色灵感来自客户的赛车涂装，呈现Cullinan作为个人表达载体的定制故事。",u:"https://newsroom.rolls-roycemotorcars.com/racing-and-car-enthusiasts-ben--christine-sloss-add-bespoke-black-badge-cullinan-to-stable/"},
+{d:"2021-03-16",t:"Low Mode 技术资料包",e:"Low Mode",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/low-mode/"},
+{d:"2021-01-13",t:"2020年Bespoke创意回顾",e:"Rolls-Royce Clients Seek Solace in Bespoke Creativity During 2020",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-clients-seek-solace-in-bespoke-creativity-during-2020/"},
+{d:"2020-12-03",t:"伦敦客户体验全面升级",e:"Rolls-Royce Motor Cars London Reimagines Operations for New Generation of Clients",c:"network",core:1,s:"疫情后重构客户体验，包括Cullinan儿童安全座椅试装与一对一越野驾驶培训。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-london-reimagines-operations-for-new-generation-of-clients/"},
+{d:"2020-12-01",t:"Pursuit Seat 猎装座椅配件",e:"Rolls-Royce Launches New ‘Pursuit Seat’ Accessory",c:"lifestyle",core:1,s:"可完美收纳于Cullinan Recreation Module的户外座椅，呼应#EffortlessEverywhere品牌主张。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-launches-new-pursuit-seat-accessory/"},
+{d:"2020-11-24",t:"Neon Nights 车漆三部曲",e:"Rolls-Royce Lights Up Black Badge Family with ‘Neon Nights’ Paint Trilogy",c:"bespoke",core:1,s:"为Dawn、Wraith与Cullinan Black Badge推出限量版本，霓虹效果Technical Fibre仪表台，灵感来自异域动植物。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-lights-up-black-badge-family-with-neon-nights-paint-trilogy/"},
+{d:"2020-10-13",t:"Cullinan沙漠探险（中东非地区）",e:"Rolls-Royce Cullinan: A Desert Adventure Awaits",c:"lifestyle",core:1,s:"面向中东与非洲市场的地域营销企划，以沙漠地形叙事展现Cullinan在无妥协豪华下的全地形能力。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-cullinan-a-desert-adventure-awaits/"},
+{d:"2020-06-11",t:"关于Rolls-Royce PLC公告的澄清",e:"Rolls-Royce Motor Cars Issues Clarification Following Recent Announcements by Rolls-Royce plc",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-issues-clarification-following-recent-announcements-by-rolls-royce-plc/"},
+{d:"2020-06-02",t:"Inspiring Greatness 摄影师合作影片",e:"Rolls-Royce Presents ‘Inspiring Greatness’ Film with Award-Winning Photographer Cory Richards",c:"lifestyle",core:1,s:"与获奖摄影师Cory Richards合作，驾驶伪装Cullinan前往苏格兰、阿联酋与美国偏远地区，以极限地形测试其能力。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-presents-inspiring-greatness-film-with-award-winning-photographer-cory-richards/"},
+{d:"2020-05-21",t:"1:8比例Cullinan模型",e:"Rolls-Royce Motor Cars: Achieving Perfection on Every Scale",c:"lifestyle",core:1,s:"推出忠实还原细节的Cullinan 1:8模型，客户可按自己的全尺寸车型定制或作为独立艺术品收藏。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars--achieving-perfection-on-every-scale/"},
+{d:"2020-04-27",t:"古德伍德之家蜂箱生态项目",e:"A Buzz of Activity at the Home of Rolls-Royce",c:"csr",core:1,s:"六座蜂箱中五座以车型命名，包含Cullinan，第六座致敬欢庆女神，呼应工厂可持续生态。",u:"https://newsroom.rolls-roycemotorcars.com/a-buzz-of-activity-at-the-home-of-rolls-royce/"},
+{d:"2020-04-17",t:"Rolls-Royce Architecture 技术资料包",e:"Rolls-Royce Architecture",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-architecture/"},
+{d:"2020-02-06",t:"King of the Night 摄影展",e:"Subculture Photographer Presents Rolls-Royce ‘King of the Night’ Exhibition",c:"bespoke",core:1,s:"摄影师Mark Riccioni在洛杉矶以Black Badge Cullinan记录汽车亚文化，3月于比佛利山庄展厅展出，车辆配备专属Urban Photography休闲模块。",u:"https://newsroom.rolls-roycemotorcars.com/subculture-photographer-presents-rolls-royce-king-of-the-night-exhibition/"},
+{d:"2020-01-21",t:"Bespoke is Rolls-Royce 定制回顾",e:"Rolls-Royce Motor Cars Bespoke is Rolls-Royce",c:"bespoke",core:1,s:"系统性回顾品牌定制能力，包含标志性的Fux Orange Cullinan等作品。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars-bespoke-is-rolls-royce/"},
+{d:"2020-01-07",t:"2019年历史性业绩",e:"Rolls-Royce Motor Cars Delivers Historic Record Result in 2019",c:"bg",core:0,s:"",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-motor-cars--delivers-historic-record-result-in-2019/"},
+{d:"2019-08-16",t:"Pebble Beach 2019收藏系列",e:"Rolls-Royce ‘Pebble Beach 2019 Collection’ Brings an Explosion of Colour to Monterey Car Week",c:"show",core:1,s:"Cullinan第二次亮相圆石滩，带来品牌史上最为丰富的Bespoke设计之一，Cartier等色彩主题集中展示。",u:"https://newsroom.rolls-roycemotorcars.com/rolls-royce-pebble-beach-2019-collection-brings-an-explosion-of-colour-to-monterey-car-week/"}
+];
+
+let state={cat:"all",year:"",q:"",all:false,asc:false};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+
+function init(){
+  $("chips").innerHTML=CATEGORIES.map(c=>`<button class="chip${c.k==="all"?" on":""}" data-k="${c.k}">${c.n}</button>`).join("");
+  const years=[...new Set(DATA.map(x=>x.d.slice(0,4)))].sort().reverse();
+  $("year").innerHTML='<option value="">全部年份</option>'+years.map(y=>`<option value="${y}">${y}年</option>`).join("");
+  $("s-act").textContent=DATA.filter(x=>x.core).length;
+  bind(); render();
+}
+function bind(){
+  $("chips").addEventListener("click",e=>{
+    const b=e.target.closest(".chip"); if(!b)return;
+    state.cat=b.dataset.k;
+    [...$("chips").children].forEach(c=>c.classList.toggle("on",c===b));
+    render();
+  });
+  $("year").addEventListener("change",e=>{state.year=e.target.value;render()});
+  $("q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render()});
+  $("sort").addEventListener("click",e=>{state.asc=!state.asc;e.target.textContent=state.asc?"时间：由远到近":"时间：由近到远";render()});
+  $("all").addEventListener("click",e=>{state.all=!state.all;e.target.classList.toggle("on",state.all);e.target.textContent=state.all?"仅看核心活动（隐藏背景）":"含背景提及（共95条）";render()});
+}
+function render(){
+  let list=DATA.filter(x=>(state.all||x.core)&&(state.cat==="all"||x.c===state.cat)&&(!state.year||x.d.startsWith(state.year)));
+  if(state.q)list=list.filter(x=>(x.t+" "+x.e+" "+x.s).toLowerCase().includes(state.q));
+  list.sort((a,b)=>state.asc?a.d.localeCompare(b.d):b.d.localeCompare(a.d));
+  $("count").textContent=`显示 ${list.length} 条`;
+  if(!list.length){$("tl").innerHTML='<div class="empty">没有符合条件的活动，试试放宽筛选条件。</div>';return}
+  let html="",curYear="";
+  for(const x of list){
+    const y=x.d.slice(0,4);
+    if(y!==curYear){curYear=y;const n=list.filter(i=>i.d.startsWith(y)).length;html+=`<div class="year"><h2>${y}<small>${n} 条</small></h2></div>`}
+    const md=x.d.slice(5).replace("-","月")+"日";
+    html+=`<div class="item"><div class="itemTop"><span class="date">${md}</span><span class="tag t-${x.c}">${TAGNAME[x.c]}</span></div><h3>${esc(x.t)}</h3><p class="en">${esc(x.e)}</p>${x.s?`<p class="desc">${esc(x.s)}</p>`:""}<a class="src" href="${x.u}" target="_blank" rel="noopener">查看官方原文 ↗</a></div>`;
+  }
+  $("tl").innerHTML=html;
+}
+init();
+</script>
+</body>
+</html>
